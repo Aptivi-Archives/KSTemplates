@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Aptivi",
+  "classifications": [ "Library" ],
+  "identity": "KSScreensaver",
+  "name": "Kernel Simulator Screensaver",
+  "shortName": "KSScreensaver",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

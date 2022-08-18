@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Aptivi",
+  "classifications": [ "Library" ],
+  "identity": "KSSplash",
+  "name": "Kernel Simulator Splash",
+  "shortName": "KSSplash",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
