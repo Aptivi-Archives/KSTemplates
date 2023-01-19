@@ -19,7 +19,7 @@ REM    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 :build
 echo Building Kernel Simulator...
-"%ProgramFiles%\dotnet\dotnet.exe" pack
+"%ProgramFiles%\dotnet\dotnet.exe" pack ../../templatepack.sln
 if %errorlevel% == 0 goto :success
 echo There was an error trying to build (%errorlevel%).
 goto :finished

@@ -3,6 +3,7 @@
 // splash code.
 
 using KS.Misc.Splash;
+using System;
 
 namespace KSCustomSplashTemplate
 {
@@ -48,6 +49,12 @@ namespace KSCustomSplashTemplate
         {
             // Choose how would you like to make a closing transition / outro. The simplest one is setting the value of SplashClosing to true and clearing
             // the console.
+        }
+
+        public void ReportError(int Progress, string ErrorReport, Exception ExceptionInfo, params object[] Vars)
+        {
+            // Choose how would you like to update the progress error report. This can be as simple as updating the area where progress percentage and text
+            // is written, or you can increment the progress bar. This is called everytime the kernel fails when it tries to make some progress while booting.
         }
     }
 }

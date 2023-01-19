@@ -26,7 +26,7 @@ fi
 
 # Pack KS templates
 echo Packing KS templates...
-"$dotnetpath" pack
+"$dotnetpath" pack ../../templatepack.sln
 if [ ! $? == 0 ]; then
 	echo Pack failed.
 	exit 1

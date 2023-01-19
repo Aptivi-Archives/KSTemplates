@@ -1,5 +1,7 @@
-﻿using KS.Modifications;
+﻿using KS.Kernel.Events;
+using KS.Modifications;
 using KS.Shell.ShellBase.Commands;
+using System;
 using System.Collections.Generic;
 
 namespace KSModTemplate
@@ -11,20 +13,26 @@ namespace KSModTemplate
         public string ModPart { get; set; }
         public string Version { get; set; }
 
-        public void InitEvents(string ev)
+        public Version MinimumSupportedApiVersion => new(3, 0, 25, 0);
+
+        public void InitEvents(EventType Event)
         {
+
         }
 
-        public void InitEvents(string ev, params object[] Args)
+        public void InitEvents(EventType Event, params object[] Args)
         {
+
         }
 
         public void StartMod()
         {
+
         }
 
         public void StopMod()
         {
+
         }
     }
 }
