@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#    Kernel Simulator  Copyright (C) 2018-2021  EoflaOE
+#    Kernel Simulator  Copyright (C) 2018-2021  Aptivi
 #
 #    This file is part of Kernel Simulator
 #
