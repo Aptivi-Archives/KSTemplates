@@ -23,7 +23,7 @@ jobs:
       run: nuget setApiKey ${{ secrets.NUGET_APIKEY }}
     - name: Package Publication (Boot)
       run: |
-        $path = "working\bin\Release\*.nupkg"
+        $path = "working\bin\Release"
         $FileName = Get-ChildItem -Path $path -Name -Filter "KS.Templates.*"
         nuget push "$path\$FileName" -source "nuget.org" -SkipDuplicate
         
