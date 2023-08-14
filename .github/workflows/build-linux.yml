@@ -22,12 +22,12 @@ jobs:
       with:
         dotnet-version: '6.0.x'
     - name: Solution Compilation
-      run: dotnet build --configuration Debug "GRILO.sln"
+      run: dotnet build --configuration Debug "templatepack.sln"
     - uses: actions/upload-artifact@v3
       if: success()
       with:
         name: grilo-build
-        path: "GRILO/bin/Debug/"
+        path: "working/bin/Debug/"
 
   notify:
 
