@@ -12,6 +12,12 @@ namespace KSScreensaverTemplate
     {
         public override string ScreensaverName { get; set; }
         public override Dictionary<string, object> ScreensaverSettings { get; set; }
+        public override bool ScreensaverContainsFlashingImages { get; set; }
+
+        public override void ScreensaverSeizureWarning()
+        {
+            // You can customize how the seizure warning will display here. Usually, you can just remove the override to use the default style.
+        }
 
         public override void ScreensaverPreparation()
         {
@@ -23,7 +29,13 @@ namespace KSScreensaverTemplate
         {
             // All of the drawing statements must be done here. These statements are executed inside the loop of the custom screensaver.
         }
+
+        public override void ScreensaverOutro()
+        {
+            // Statements written here will be executed when the screensaver gets finalized. They usually get executed before the screensaver
+            // logic exits. This usually contains variable resets.
+        }
     }
 }
 
-// Refer to https://eoflaoe.github.io/Kernel-Simulator for up-to-date API documentation for screensaver developers.
+// Refer to https://aptivi.github.io/Kernel-Simulator for up-to-date API documentation for screensaver developers.

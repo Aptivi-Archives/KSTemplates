@@ -13,7 +13,7 @@ namespace KSModTemplate
         public string ModPart { get; set; }
         public string Version { get; set; }
 
-        public Version MinimumSupportedApiVersion => new(3, 0, 25, 0);
+        public Version MinimumSupportedApiVersion => new(3, 0, 25, 42);
 
         public void InitEvents(EventType Event)
         {
@@ -37,4 +37,4 @@ namespace KSModTemplate
     }
 }
 
-// Refer to https://eoflaoe.github.io/Kernel-Simulator for up-to-date API documentation for mod developers.
+// Refer to https://aptivi.github.io/Kernel-Simulator for up-to-date API documentation for mod developers.

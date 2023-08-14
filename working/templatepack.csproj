@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>0.1.0-beta1</PackageVersion>
+    <PackageVersion>0.1.0-beta2</PackageVersion>
     <PackageId>KS.Templates</PackageId>
-    <Title>Kernel Simulator Templates</Title>
+    <Title>Nitrocid KS Templates</Title>
     <Authors>Aptivi</Authors>
-    <Description>Templates to use when creating KS mods, screensavers, and splashes</Description>
+    <Description>Templates to use when creating N-KS mods, screensavers, and splashes</Description>
     <PackageTags>dotnet-new;templats;ks;kernel;simulator</PackageTags>
     <TargetFramework>net6.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
