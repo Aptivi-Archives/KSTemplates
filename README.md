@@ -5,7 +5,7 @@ These templates are used to make Kernel Simulator mods, screensavers, and splash
 To install these templates, just download a `.nupkg` file from Releases and execute the following:
 
 ```shell
-dotnet new --install path/to/KSTemplates.nupkg
+dotnet new install path/to/KSTemplates.nupkg
 ```
 
 ## License
