@@ -1,15 +1,15 @@
 @echo off
 
-REM    Kernel Simulator  Copyright (C) 2018-2021  Aptivi
+REM    Nitrocid KS  Copyright (C) 2018-2024  Aptivi
 REM
-REM    This file is part of Kernel Simulator
+REM    This file is part of Nitrocid KS
 REM
-REM    Kernel Simulator is free software: you can redistribute it and/or modify
+REM    Nitrocid KS is free software: you can redistribute it and/or modify
 REM    it under the terms of the GNU General Public License as published by
 REM    the Free Software Foundation, either version 3 of the License, or
 REM    (at your option) any later version.
 REM
-REM    Kernel Simulator is distributed in the hope that it will be useful,
+REM    Nitrocid KS is distributed in the hope that it will be useful,
 REM    but WITHOUT ANY WARRANTY; without even the implied warranty of
 REM    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 REM    GNU General Public License for more details.
@@ -18,7 +18,7 @@ REM    You should have received a copy of the GNU General Public License
 REM    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 :build
-echo Building Kernel Simulator...
+echo Building Nitrocid KS...
 "%ProgramFiles%\dotnet\dotnet.exe" pack ../../templatepack.sln
 if %errorlevel% == 0 goto :success
 echo There was an error trying to build (%errorlevel%).

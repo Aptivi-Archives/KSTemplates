@@ -1,6 +1,6 @@
-# Kernel Simulator templates
+# Nitrocid KS templates
 
-These templates are used to make Kernel Simulator mods, screensavers, and splashes.
+These templates are used to make Nitrocid KS mods, screensavers, and splashes.
 
 To install these templates, just download a `.nupkg` file from Releases and execute the following:
 
@@ -10,8 +10,8 @@ dotnet new install path/to/KSTemplates.nupkg
 
 ## License
 
-    KSTemplates - Templates for Kernel Simulator
-    Copyright (C) 2022  Aptivi
+    KSTemplates - Templates for Nitrocid KS
+    Copyright (C) 2018-2024  Aptivi
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

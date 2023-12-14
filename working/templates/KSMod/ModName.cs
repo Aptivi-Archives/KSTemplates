@@ -1,29 +1,23 @@
-﻿using KS.Kernel.Events;
-using KS.Modifications;
-using KS.Shell.ShellBase.Commands;
+﻿using KS.Modifications;
 using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Reflection;
 
-namespace KSModTemplate
+namespace NitrocidMod
 {
-    public class ModName : IScript
+    public class ModName : IMod
     {
-        public Dictionary<string, CommandInfo> Commands { get; set; }
-        public string Name { get; set; }
-        public string ModPart { get; set; }
-        public string Version { get; set; }
+        public string Name { get; set; } = "My Mod";
+        public string ModPart { get; set; } = "Main";
+        public string Version { get; set; } = "1.0.0";
 
-        public Version MinimumSupportedApiVersion => new(3, 0, 25, 42);
+        public Version MinimumSupportedApiVersion => new(3, 0, 25, 377);
 
-        public void InitEvents(EventType Event)
-        {
+        public ReadOnlyDictionary<string, Delegate> PubliclyAvailableFunctions => null;
 
-        }
+        public ReadOnlyDictionary<string, PropertyInfo> PubliclyAvailableProperties => null;
 
-        public void InitEvents(EventType Event, params object[] Args)
-        {
-
-        }
+        public ReadOnlyDictionary<string, FieldInfo> PubliclyAvailableFields => null;
 
         public void StartMod()
         {
