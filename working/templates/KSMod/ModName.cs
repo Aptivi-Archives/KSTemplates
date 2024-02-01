@@ -1,23 +1,24 @@
-﻿using KS.Modifications;
+﻿using Nitrocid.Modifications;
 using System;
 using System.Collections.ObjectModel;
 using System.Reflection;
 
-namespace NitrocidMod
+namespace KSMod
 {
     public class ModName : IMod
     {
         public string Name { get; set; } = "My Mod";
-        public string ModPart { get; set; } = "Main";
         public string Version { get; set; } = "1.0.0";
 
-        public Version MinimumSupportedApiVersion => new(3, 0, 25, 377);
+        public Version MinimumSupportedApiVersion => new(3, 0, 25, 411);
 
         public ReadOnlyDictionary<string, Delegate> PubliclyAvailableFunctions => null;
 
         public ReadOnlyDictionary<string, PropertyInfo> PubliclyAvailableProperties => null;
 
         public ReadOnlyDictionary<string, FieldInfo> PubliclyAvailableFields => null;
+
+        public ModLoadPriority LoadPriority => ModLoadPriority.Optional;
 
         public void StartMod()
         {

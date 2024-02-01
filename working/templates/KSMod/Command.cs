@@ -1,6 +1,6 @@
-﻿using KS.Shell.ShellBase.Commands;
+﻿using Nitrocid.Shell.ShellBase.Commands;
 
-namespace NitrocidMod
+namespace KSMod
 {
     internal class TuiCommand : BaseCommand, ICommand
     {
